@@ -6,15 +6,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const cards = document.getElementById('cards')
     const items = bandCollection.data
     
-    console.log(items)
-
     items.forEach(item => {
         let cardDOM = buildCardDOM(item)
-        
-        console.log(cardDOM)
-        
         cards.insertAdjacentHTML('beforeend', cardDOM)
-
     })
 })
 
